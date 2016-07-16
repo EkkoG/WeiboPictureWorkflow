@@ -50,6 +50,7 @@ def delete_config():
 def generate_config():
     import textwrap
     config_init_content = '''\
+        ; 用做模拟登录，得到 cookie 后则删除配置文件
         [weibo]
         username=微博登录用户名
         password=微博密码
