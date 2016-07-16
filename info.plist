@@ -98,29 +98,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>python get_markdown.py</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>7DA4AAEF-4FE2-45C8-B823-A7364FA44593</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -145,6 +122,29 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python get_markdown.py</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7DA4AAEF-4FE2-45C8-B823-A7364FA44593</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -153,9 +153,9 @@
 		<key>591565B1-00D5-4E31-857B-B6C8C7EF0CCA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>60</integer>
 			<key>ypos</key>
-			<integer>240</integer>
+			<integer>270</integer>
 		</dict>
 		<key>6794AEA8-67CE-4356-8100-D1F89FCC6650</key>
 		<dict>
@@ -167,9 +167,9 @@
 		<key>7DA4AAEF-4FE2-45C8-B823-A7364FA44593</key>
 		<dict>
 			<key>xpos</key>
-			<integer>340</integer>
+			<integer>460</integer>
 			<key>ypos</key>
-			<integer>230</integer>
+			<integer>270</integer>
 		</dict>
 		<key>BD9007C9-F3B0-4C15-9143-AC020D525058</key>
 		<dict>
