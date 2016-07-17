@@ -10,7 +10,7 @@ import util
 import os
 import sys
 import weibo
-from clipboard import get_paste_img_file_path
+from clipboard import get_paste_img_file
 
 def upload_file():
     if not weibo.check_login_status():
@@ -32,10 +32,9 @@ def upload_file():
         else:
             util.alert('登录失败，请重试!')
             exit()
-
-    file_path = get_paste_img_file_path()
-    if file_path:
-        url = weibo.request_image_url(file_path)
+    img_file = get_paste_img_file()
+    if img_file:
+        url = weibo.request_image_url(img_file.name)
         if url:
             return url
         else:
