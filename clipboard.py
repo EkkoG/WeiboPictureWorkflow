@@ -47,6 +47,7 @@ def get_paste_img_file():
             # now only support png & jpg & gif
             return None
 
+        is_gif = img_type == 'gif'
         _file = tempfile.NamedTemporaryFile(suffix=img_type)
         tmp_clipboard_img_file = tempfile.NamedTemporaryFile()
         shutil.copy(img_path, tmp_clipboard_img_file.name)
