@@ -13,6 +13,8 @@
 from upload import upload_file
 import util
 import os
+import sys
+
 
 url = upload_file()
 if url:
@@ -20,3 +22,4 @@ if url:
     util.alert('上传图片成功，图片 URL 已复制到剪切板！')
 else:
     util.alrt('上传失败!')
+    sys.exit(0)

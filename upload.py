@@ -7,10 +7,10 @@
 # Distributed under terms of the MIT license.
 
 import util
-import os
 import sys
 import weibo
 from clipboard import get_paste_img_file
+
 
 def upload_file():
     if not weibo.check_login_status():
@@ -26,13 +26,17 @@ def upload_file():
 
         username = config['username']
         password = config['password']
+
         weibo.login_with_username_and_password(username, password)
+
         if weibo.check_login_status():
             util.delete_config()
         else:
             util.alert('登录失败，请重试!')
-            exit()
+            sys.exit(0)
+
     img_file = get_paste_img_file()
+
     if img_file:
         url = weibo.request_image_url(img_file.name)
         if url:
@@ -41,3 +45,4 @@ def upload_file():
             return None
     else:
         util.alert('您的剪切板里没有图片!')
+        sys.exit(0)
