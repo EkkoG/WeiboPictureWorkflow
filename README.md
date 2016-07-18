@@ -7,7 +7,7 @@
 
 在 [Release](https://github.com/cielpy/WeiboPictureWorkflow/releases) 页下载最新的 Workflow 安装即可，安装完成后设置自己的快捷键
 
-![](https://ww3.sinaimg.cn/large/74681984gw1f5xbkf7f9oj20nh0geabb)
+![](https://github.com/cielpy/WeiboPictureWorkflow/blob/master/images/74681984gw1f5xbkf7f9oj20nh0geabb.jpeg)
 
 上方是单独生成 URL 的，下方是生成 Markdown 格式字符串的，可以根据自己的喜好设置。
 
