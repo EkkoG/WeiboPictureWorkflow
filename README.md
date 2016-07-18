@@ -15,4 +15,8 @@
 
 登录完成后就可以上传图片了，截图或者复制一张图片，按刚才设置的快捷键，上传完成后会有提示。提示 URL 已复制到剪切板的话，说明已经上传成功，这个时候就可以粘贴到你想要粘贴的地方了。
 
+### 鸣谢
+
+此项目中很多源码取自 https://github.com/tiann/markdown-img-upload 和 https://github.com/trytofix/hexo_weibo_image ，在这里非常感谢两位作者的付出。
+
 
