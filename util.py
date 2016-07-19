@@ -56,4 +56,4 @@ def generate_config():
         password=微博密码
         '''
     with open(CONFIG_FILE, 'w') as fp:
-            fp.write(textwrap.dedent(config_init_content))
+        fp.write(textwrap.dedent(config_init_content))
