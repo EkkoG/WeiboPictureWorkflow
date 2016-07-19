@@ -8,7 +8,7 @@
 
 import util
 import sys
-import weibo
+from weibo import weibo
 from clipboard import get_paste_img_file
 
 
