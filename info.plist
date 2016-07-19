@@ -147,7 +147,7 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>上传剪切板中的图片到新浪微博，并复制 URL 到剪切板。</string>
 	<key>uidata</key>
 	<dict>
 		<key>591565B1-00D5-4E31-857B-B6C8C7EF0CCA</key>
@@ -179,6 +179,8 @@
 			<integer>140</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>0.2</string>
 	<key>webaddress</key>
 	<string>https://imciel.com/</string>
 </dict>
