@@ -27,7 +27,12 @@ def upload_file():
         username = config['username']
         password = config['password']
 
-        weibo.login_with_username_and_password(username, password)
+        try:
+            weibo.login_with_username_and_password(username, password)
+        except:
+            util.alert('登录失败，请重试!')
+            sys.exit(0)
+
 
         if weibo.check_login_status():
             util.delete_config()
@@ -38,10 +43,13 @@ def upload_file():
     img_file = get_paste_img_file()
 
     if img_file:
-        url = weibo.request_image_url(img_file.name)
-        if url:
+        try:
+            url = weibo.request_image_url(img_file.name)
             return url
-        else:
+        except:
+            util.delete_cookie()
+            util.alert('Cookie 过期，请重新登录!')
+            sys.exit(0)
             return None
     else:
         util.alert('您的剪切板里没有图片!')

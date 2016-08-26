@@ -22,5 +22,5 @@ if url:
     os.system("echo '%s' | pbcopy" % markdown_url)
     util.alert('上传图片成功，图片 Markdown 已复制到剪切板！')
 else:
-    util.alrt('上传失败!')
+    util.alert('上传失败!')
     sys.exit(0)

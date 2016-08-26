@@ -15,6 +15,7 @@ import ConfigParser
 from tempfile import NamedTemporaryFile
 
 CONFIG_FILE = 'config.ini'
+COOKIE_FILE = 'cookie.txt'
 
 def check_config_file():
     return os.path.exists(CONFIG_FILE)
@@ -46,6 +47,9 @@ def open_with_editor():
 
 def delete_config():
     os.system('/bin/rm "./%s"' % CONFIG_FILE)
+
+def delete_cookie():
+    os.system('/bin/rm "./%s"' % COOKIE_FILE)
 
 def generate_config():
     import textwrap

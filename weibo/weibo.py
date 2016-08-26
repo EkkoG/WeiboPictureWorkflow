@@ -86,7 +86,7 @@ def login(form_data):
 
 def request_image_url(image_path):
     cookie = cookielib.MozillaCookieJar()
-    cookie.load(cookie_file, ignore_expires=True, ignore_discard=True)
+    cookie.load(cookie_file, ignore_expires=False, ignore_discard=True)
     opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))
     image_url = 'http://picupload.service.weibo.com/interface/pic_upload.php?mime=image%2Fjpeg&data=base64&url=0&markpos=1&logo=&nick=0&marks=1&app=miniblog'
     b = base64.b64encode(file(image_path).read())
